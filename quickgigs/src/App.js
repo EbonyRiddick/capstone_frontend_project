@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Login from './components/login';
-import GetSeekers from './components/GetSeekers';
+import Login from './components/login/login';
+import Register from './components/register/register';
+import axios from 'axios';
+import React, {useState, useEffect} from 'react';
+
 
 function App() {
   return (
@@ -20,7 +23,8 @@ function App() {
           Learn React
         </a>
         <Login></Login>
-        <GetSeekers></GetSeekers>
+        <Register></Register>
+
       </header>
     </div>
   );
