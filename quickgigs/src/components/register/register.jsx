@@ -20,7 +20,8 @@ const Register = (props) => {
             "password": password,
         
         }
-        let response = await axios.post('http://127.0.0.1:8000/api/auth/register/', registerUser);
+        
+        let response = await axios.post('http://127.0.0.1:8000/api/auth/register/job_seeker/', registerUser);
         console.log(response.data)
     }
 
@@ -35,7 +36,7 @@ const Register = (props) => {
             <label>UserName</label>
             <input type='text' onChange={(e)=> setUsername(e.target.value)}></input>
             <label>Password</label>
-            <input type='text' onChange={(e => setPassword(e.target.value))}></input>
+            <input type='text' onChange={(e => setPassword(e.target.value))}></input><br />
             <button type='submit'>Register</button>
         </form>
     )

@@ -20,9 +20,9 @@ const Login = (props) => {
     return(
         <form onSubmit={handleSubmit}>
             <label>UserName</label>
-            <input type='text' onChange={(e)=> setUserName(e.target.value)}></input>
+            <input type='text' onChange={(e)=> setUserName(e.target.value)}></input><br />
             <label>password</label>
-            <input type='text' onChange={(e => setPassword(e.target.value))}></input>
+            <input type='text' onChange={(e => setPassword(e.target.value))}></input><br />
             <button type='submit'>Login</button>
         </form>
     )

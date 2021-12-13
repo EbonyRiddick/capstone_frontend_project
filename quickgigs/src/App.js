@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './components/login/login';
 import Register from './components/register/register';
+import Logout from './components/logout/logout';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 
@@ -23,6 +24,7 @@ function App() {
           Learn React
         </a>
         <Login></Login>
+        <Logout></Logout>
         <Register></Register>
 
       </header>
