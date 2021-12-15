@@ -24,8 +24,8 @@ function App() {
           Learn React
         </a>
         <Login></Login>
-        <Logout></Logout>
         <Register></Register>
+        {/* <Logout></Logout> */}
 
       </header>
     </div>
