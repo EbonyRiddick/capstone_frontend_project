@@ -39,7 +39,7 @@ const Register = (props) => {
             <input type='text' onChange={(e => setPassword(e.target.value))}></input><br />
             <button type='submit'>Register</button>
             <br />
-            <a href="http://127.0.0.1:8000/api/auth/register/job_poster/">Click Here To Register Company</a>
+            <a  href="http://127.0.0.1:8000/api/auth/register/job_poster/">Click Here To Register Company</a>
         </form>
 
         
