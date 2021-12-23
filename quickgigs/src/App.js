@@ -30,4 +30,43 @@ class App extends Component {
   }
 }
 
+//   }
+
+//   <Router>
+//         <Switch>
+//             <Route exact path='/' component={Login} />
+//             <Route exact path='/register' component={Register} />
+//             {/* <Route exact path='/' component={Contact} /> */}
+//             {/* <Route exact path='/listings' component={Listings} /> */}
+//             {/* <PrivateRoute exact path='/listings/:id' component={ListingDetail} /> */}
+//             {/* <Route component={NotFound} /> */}
+//         </Switch>
+// </Router>
+
+
+
+  // return (
+  //   <div className="App">
+  //     <header className="App-header">
+  //       <img src={logo} className="App-logo" alt="logo" />
+  //       <p>
+  //         Edit <code>src/App.js</code> and save to reload.
+  //       </p>
+  //       <a
+  //         className="App-link"
+  //         href="https://reactjs.org"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         Learn React
+  //       </a>
+  //       <Login></Login>
+  //       <Register></Register>
+  //       {/* <Logout></Logout> */}
+
+  //     </header>
+  //   </div>
+  // );
+
+
 export default App;
