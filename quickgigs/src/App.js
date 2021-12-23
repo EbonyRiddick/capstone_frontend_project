@@ -1,35 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import Login from './components/login/login';
-import Register from './components/register/register';
-import Logout from './components/logout/logout';
+import SeekerRegister from './components/SeekerRegister/SeekerRegister';
+import PosterRegister from './components/PosterRegister/PosterRegister';
+import {Link} from "react-router-dom"
+// import Logout from './components/logout/logout';
 import axios from 'axios';
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Component} from 'react';
+// import { render } from 'react-dom';
+import './App.css'
 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Login></Login>
-        <Register></Register>
-        {/* <Logout></Logout> */}
+class App extends Component {
 
-      </header>
-    </div>
-  );
+
+
+  render(){
+    return (
+      <Router>
+        <Switch>
+          <Route exact path ="/" component = {Login} />
+          <Route path="/SeekerRegister" component={SeekerRegister}/> 
+          <Route path="/PosterRegister" component={PosterRegister}/>      
+          {/* <SeekerRegister></SeekerRegister>
+          <PosterRegister></PosterRegister> */}
+        </Switch>
+      </Router>
+
+      );
+  }
 }
 
 export default App;
